@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+padding: 20px;
+position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+
+}
+
+.header__logo{
+    height: 40px;
+    width: 80px;
+    object-fit: contain;
+    
+}
+.icon1{
+    width:30px;
+     height:100px;
+}
+.header__input{
+    display: flex;
+    align-items: center;
+    width:40%;
+    border: 1px solid lightgray;
+}
+.header__inputButton{
+    width:50px;
+    background-color: #fafafa;
+    border-left: 1px solid lightgray;
+    color:gray;
+}
+.header__icon{
+    margin-right: 8px;
+}
+
+.header__icons{
+    display: flex;
+    align-items: center;
+}
+.header__input > input{
+    flex:1;
+    border:none;
+}
