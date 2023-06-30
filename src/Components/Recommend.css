@@ -1,3 +1,67 @@
-.Subscription{
-    flex:0.8;
+.s{
+    padding: 15px 20px;
+    margin-top: 10px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    
 }
+.span{
+    border: 1px solid black;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+border-radius: 20px;
+font-size: 16px;
+cursor: pointer;
+padding: 13px 20px;
+background-color: lightgray;
+}
+
+.span:hover{
+    background-color: black;
+    color:White;
+    cursor: pointer;
+}
+.s.selected > .span{
+    background-color: black;
+    color:white;
+}
+
+
+.span1{
+    border: 1px solid black;
+border-radius: 20px;
+font-size: 16px;
+cursor: pointer;
+padding: 10px 20px;
+background-color: lightgray;
+
+margin-left: 22px;
+
+}
+.span1:hover{
+    background-color: black;
+    color:White;
+    cursor: pointer;
+}
+
+.f{
+    
+    margin-top: 1px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+
+
+.Subscription{
+    flex:0.6;
+    display: flex;
+    margin-top: 40px;
+}
+
