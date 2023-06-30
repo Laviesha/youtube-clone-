@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState}from 'react'
 import './Header.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
@@ -10,6 +10,16 @@ import MicIcon from '@mui/icons-material/Mic';
 import Avatar from '@mui/material/Avatar';
 
 function Header() {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  const showAlert = () => {
+    alert(`Loading: ${inputValue}`);
+  };
+
   return (
     <div className='header'>
      < div className='header__left'>
@@ -21,9 +31,9 @@ function Header() {
       </div>
 
       <div className="header__input">
-      <input placeholder='Search' type="text"/>
-      <SearchIcon className="header__inputButton"/>
-      <MicIcon/>
+      <input placeholder='Search' type="text"  value={inputValue} onChange={handleInputChange}/>
+      <SearchIcon className="header__inputButton" onClick={showAlert}/>
+      <MicIcon className='mic'/>
       </div>
       <div className='icon2'>
       
@@ -40,4 +50,3 @@ function Header() {
 }
 
 export default Header
-
