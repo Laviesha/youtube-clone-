@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 import RecommendedVideos from './Components/RecommendedVideos';
 
+
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,8 @@ function App() {
            
                  <Sidebar />
                   < RecommendedVideos/>
+                  
+                 
                   </div>   
     </div>
   );
